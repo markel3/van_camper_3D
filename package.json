@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "description": "CamperStudio 3D - Diseño paramétrico de camperizaciones",
+  "license": "Apache-2.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

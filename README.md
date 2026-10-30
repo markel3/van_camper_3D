@@ -12,6 +12,7 @@ Distribuye el interior de tu furgoneta en 3D, comprueba pesos, centro de graveda
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 ![Interior de un furgón grande L3H2 camperizado en CamperStudio 3D](docs/screenshots/interior.jpg)
 
@@ -29,6 +30,7 @@ Distribuye el interior de tu furgoneta en 3D, comprueba pesos, centro de graveda
 - [Arquitectura](#arquitectura)
 - [Documentación del proyecto](#documentación-del-proyecto)
 - [Créditos de recursos](#créditos-de-recursos)
+- [Licencia](#licencia)
 - [Aviso](#aviso)
 
 ## Qué es
@@ -180,6 +182,12 @@ El motor de ingeniería (`src/utils`) es TypeScript puro, sin React, y comparte 
 
 - Texturas PBR, HDRI de estudio y modelos de decoración de [Poly Haven](https://polyhaven.com) y [ambientCG](https://ambientcg.com), con licencia **CC0**. El detalle está en [`public/models/decor/CREDITS.md`](public/models/decor/CREDITS.md).
 - Iconos de [Lucide](https://lucide.dev).
+
+## Licencia
+
+Copyright 2026 Markel Iru.
+
+Distribuido bajo la licencia **Apache 2.0**. El texto completo está en [LICENSE](LICENSE). Los recursos de terceros mantienen sus propias licencias (ver [Créditos de recursos](#créditos-de-recursos)).
 
 ## Aviso
 
