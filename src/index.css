@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Desktop-CAD palette (navy / slate), see img/*.jpeg references */
+  --color-cad-bg: #0e141d;
+  --color-cad-chrome: #121a25;
+  --color-cad-panel: #172130;
+  --color-cad-raised: #1d2a3b;
+  --color-cad-hover: #243447;
+  --color-cad-border: #283648;
+  --color-cad-line: #1f2b3b;
+  --color-cad-text: #d7dfea;
+  --color-cad-muted: #8796ab;
+  --color-cad-faint: #5b6a80;
+  --color-cad-accent: #1d6fd8;
+  --color-cad-accent-hi: #3488f0;
+  --color-cad-accent-soft: #1d6fd833;
+  --color-cad-ok: #1f9d57;
+  --color-cad-ok-hi: #34c172;
+  --color-cad-viewport: #2b3646;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-cad-bg text-cad-text font-sans antialiased;
+}
+
+/* Thumbnail capture mode (?thumbnail=...): transparent page so the webp keeps its alpha */
+body.thumbnail-mode,
+body.thumbnail-mode #root {
+  background: transparent;
+}
+
+/* Thin dark scrollbars for the side panels */
+.cad-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #33445a transparent;
+}
+
+/* Workflow stepper chevrons */
+.cad-chevron {
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);
+}
+.cad-chevron-first {
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
+}
+
+/* Range input (LED intensity) */
+.cad-range {
+  accent-color: var(--color-cad-accent);
+}

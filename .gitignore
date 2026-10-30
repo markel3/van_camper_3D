@@ -1,0 +1,7 @@
+node_modules
+dist
+*.local
+.DS_Store
+
+# Heavy local reference media
+ejemplos_interior.mp4
